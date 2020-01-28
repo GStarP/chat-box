@@ -52,3 +52,8 @@ execute two command in two terminals
 1. `npm run watch`: rebuild when client/src/main.js changes
 
 2. `npm run dev`: restart when server/client files change
+
+## Common Errors
+
+- connect web socket failed: code 302
+  - the port you select to start web socket server has already been used
