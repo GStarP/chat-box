@@ -1,0 +1,76 @@
+div.panel {
+  position: relative;
+}
+ul[data-chat="chat-list"] {
+  padding: 0;
+  list-style: none;
+}
+.message-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.message-row > p {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+img {
+  flex: 0 1 auto;
+  border-radius: 0 20px 20px 0;
+}
+.message-author {
+  flex: 0 1 auto;
+  display: block;
+  margin-right: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+.message-time {
+  flex: 0 1 auto;
+  display: block;
+  margin-right: 10px;
+  text-align: right;
+  font-style: italic;
+}
+.message-content {
+  flex: 0 1 auto;
+  display: block;
+  margin-right: 10px;
+  position: absolute;
+  top: 20px;
+  text-align: right;
+}
+.me {
+  flex-direction: row;
+}
+.me > p {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.me .message-author {
+  margin-right: 0;
+  margin-left: 10px;
+  text-align: left;
+}
+.me .message-time {
+  margin-right: 0;
+  margin-left: 10px;
+  text-align: left;
+}
+.me .message-content {
+  margin-right: 0;
+  margin-left: 10px;
+  right: 0;
+  text-align: left;
+}
+.input-group {
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+}

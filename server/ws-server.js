@@ -19,7 +19,7 @@ ws.on('connection', socket => {
 
   // send all history messages to the new user
   msgHistory.forEach(msg => {
-    socket.send(`${msg.author}: ${msg.content}`);
+    socket.send(msg);
   });
 
   socket.on('message', msg => {
